@@ -21,6 +21,8 @@
 /Users/max/Code/Cordova/colon2/platforms/android/assets/www/index.html \
 /Users/max/Code/Cordova/colon2/platforms/android/assets/www/js \
 /Users/max/Code/Cordova/colon2/platforms/android/assets/www/css/index.css \
+/Users/max/Code/Cordova/colon2/platforms/android/assets/www/img/childrens.png \
 /Users/max/Code/Cordova/colon2/platforms/android/assets/www/img/logo.png \
+/Users/max/Code/Cordova/colon2/platforms/android/assets/www/img/stony-brook.jpg \
 /Users/max/Code/Cordova/colon2/platforms/android/assets/www/js/index.js \
 /Users/max/Code/Cordova/colon2/platforms/android/ant-build/AndroidManifest.xml \
