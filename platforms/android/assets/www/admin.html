@@ -25,9 +25,9 @@
         <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
         <!-- CDN FILES -->
-        <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-        <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <script src="js/jquery-2.1.1.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
         <!-- LOCAL FILES -->
         <link rel="stylesheet" type="text/css" href="css/index.css" />
         <script type="text/javascript" src="cordova.js"></script>
@@ -37,35 +37,65 @@
         </script>
     </head>
     <body>
+        <!-- HEADER -->
         <nav class="navbar navbar-default" role="navigation">
-  <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#">Stony Brook Children's Hospital</a>
-    </div>
+          <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#">Stony Brook Children's Hospital</a>
+            </div>
 
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
-        <li><a href="index.html">HOME</a></li>
-        <li><a href="faq.html">FAQ</a></li>
-        <li><a href="written.html">WRITTEN INSTRUCTIONS</a></li>
-        <li class="active"><a href="admin.html">ADMIN</a></li>
-      </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-</nav>
-       
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="written.html">WRITTEN INSTRUCTIONS</a></li>
+                <li class="active"><a href="admin.html">ADMIN</a></li>
+              </ul>
+            </div><!-- /.navbar-collapse -->
+          </div><!-- /.container-fluid -->
+        </nav>
+        
+        <!-- CONTENT -->
+        <div class="radio">
+          <label>
+            <input type="radio" name="optionsRadios" id="optionsRadios1" value="SMALL" checked>
+            SMALL
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="optionsRadios" id="optionsRadios2" value="MEDIUM">
+            MEDIUM
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="optionsRadios" id="optionsRadios3" value="LARGE">
+            LARGE
+          </label>
+        </div>
+
+          Appointment: <input id="datePicker" type="date" name="bday">
+          <button id="submitButton">Submit</button>
+          <p id="message"></p>
+        <!-- FOOTER -->
         <nav class="navbar navbar-default navbar-fixed-bottom" role="navigation">
           <div class="container">
             <button type="button" class="btn btn-primary btn-lg btn-block"><a href="index.html">HOME</a></button>
           </div>
         </nav>
+        <script>
+            $("#submitButton").click(function(){
+                $("#message").html("SUCCESSFUL UPDATE: \nNEW DATE:"+$("#datePicker").val()+"\nWEIGHT CLASS: "+$('input:radio[name=optionsRadios]:checked').val());
+            });
+        </script>
     </body> 
 </html>

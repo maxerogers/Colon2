@@ -37,35 +37,74 @@
         </script>
     </head>
     <body>
+        <!-- HEADER -->
         <nav class="navbar navbar-default" role="navigation">
-  <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#">Stony Brook Children's Hospital</a>
-    </div>
+          <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#">Stony Brook Children's Hospital</a>
+            </div>
 
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
-        <li><a href="index.html">HOME</a></li>
-        <li><a href="faq.html">FAQ</a></li>
-        <li><a href="written.html">WRITTEN INSTRUCTIONS</a></li>
-        <li class="active"><a href="admin.html">ADMIN</a></li>
-      </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-</nav>
-       
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="written.html">WRITTEN INSTRUCTIONS</a></li>
+                <li class="active"><a href="admin.html">ADMIN</a></li>
+              </ul>
+            </div><!-- /.navbar-collapse -->
+          </div><!-- /.container-fluid -->
+        </nav>
+        
+        <!-- CONTENT -->
+
+        Current Weight: 
+        <br> Current Appointment Date: 
+        <br>
+        UPDATE
+        <br>
+        Weight:
+        <div class="radio">
+          <label>
+            <input type="radio" name="optionsRadios" id="optionsRadios1" value="Less than 15kg" checked>
+            Less than 15kg
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="optionsRadios" id="optionsRadios2" value="15-30kg">
+            15-30kg
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="optionsRadios" id="optionsRadios3" value="Greater than 30kg">
+            Greater than 30kg
+          </label>
+        </div>
+
+          Appointment: <input id="datePicker" type="date" name="bday">
+          <button id="submitButton">Submit</button>
+          <p id="message"></p>
+        <!-- FOOTER -->
         <nav class="navbar navbar-default navbar-fixed-bottom" role="navigation">
           <div class="container">
-            <button type="button" class="btn btn-primary btn-lg btn-block"><a href="index.html">HOME</a></button>
+            <a role="button" class="btn btn-primary btn-lg btn-block" href="index.html">HOME</a>
           </div>
         </nav>
+        <script>
+            $("#submitButton").click(function(){
+                var date = $("#datePicker").val();
+                var weight = $('input:radio[name=optionsRadios]:checked').val();
+                $("#message").html("SUCCESSFUL UPDATE");
+            });
+        </script>
     </body> 
 </html>
