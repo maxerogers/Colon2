@@ -1,6 +1,5 @@
 div.container-fluid div.row h1 {
-
-    color: blue;
+    color: black;
     margin-top: 0px;
     margin-bottom: 20px;
 }
@@ -15,6 +14,9 @@ div.content.container-fluid div.row div.content img#children_logo {
     max-width: 200px;
 }
 
+div.content-left{
+    line-height: 1.3;
+}
 
 
 div.content.container-fluid div.row div.content p {
