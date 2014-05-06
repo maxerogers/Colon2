@@ -65,10 +65,11 @@
         
         <!-- CONTENT -->
 
-        Current Weight: 
-        <br> Current Appointment Date: 
+        Current Weight: <span id="currentWeight"></span>
+        <br> Current Appointment Date: <span id="currentDate"></span>
         <br>
-        UPDATE
+        <br>
+        CHANGE
         <br>
         Weight:
         <div class="radio">
@@ -91,7 +92,7 @@
         </div>
 
           Appointment: <input id="datePicker" type="date" name="bday">
-          <button id="submitButton">Submit</button>
+          <button id="submitButton">Update</button>
           <p id="message"></p>
         <!-- FOOTER -->
         <nav class="navbar navbar-default navbar-fixed-bottom" role="navigation">
@@ -100,10 +101,18 @@
           </div>
         </nav>
         <script>
+            if(window.localStorage.getItem("weight") !== null){
+                $("#currentWeight").html(window.localStorage.getItem("weight"));
+            }
+            if(window.localStorage.getItem("date") !== null){
+                $("#currentDate").html(window.localStorage.getItem("date"));
+            }
             $("#submitButton").click(function(){
-                var date = $("#datePicker").val();
-                var weight = $('input:radio[name=optionsRadios]:checked').val();
+                window.localStorage.setItem("date",$("#datePicker").val());
+                window.localStorage.setItem("weight",$('input:radio[name=optionsRadios]:checked').val());
                 $("#message").html("SUCCESSFUL UPDATE");
+                $("#currentWeight").html(window.localStorage.getItem("weight"));
+                $("#currentDate").html(window.localStorage.getItem("date"));
             });
         </script>
     </body> 

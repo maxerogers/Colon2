@@ -64,22 +64,29 @@
         </nav>
         
         <!-- CONTENT -->
+
+        Current Weight: <span id="currentWeight"/>
+        <br> Current Appointment Date: <span id="currentDate"/>
+        <br>
+        UPDATE
+        <br>
+        Weight:
         <div class="radio">
           <label>
-            <input type="radio" name="optionsRadios" id="optionsRadios1" value="SMALL" checked>
-            SMALL
+            <input type="radio" name="optionsRadios" id="optionsRadios1" value="Less than 15kg" checked>
+            Less than 15kg
           </label>
         </div>
         <div class="radio">
           <label>
-            <input type="radio" name="optionsRadios" id="optionsRadios2" value="MEDIUM">
-            MEDIUM
+            <input type="radio" name="optionsRadios" id="optionsRadios2" value="15-30kg">
+            15-30kg
           </label>
         </div>
         <div class="radio">
           <label>
-            <input type="radio" name="optionsRadios" id="optionsRadios3" value="LARGE">
-            LARGE
+            <input type="radio" name="optionsRadios" id="optionsRadios3" value="Greater than 30kg">
+            Greater than 30kg
           </label>
         </div>
 
@@ -89,12 +96,16 @@
         <!-- FOOTER -->
         <nav class="navbar navbar-default navbar-fixed-bottom" role="navigation">
           <div class="container">
-            <button type="button" class="btn btn-primary btn-lg btn-block"><a href="index.html">HOME</a></button>
+            <a role="button" class="btn btn-primary btn-lg btn-block" href="index.html">HOME</a>
           </div>
         </nav>
         <script>
+            $("#currentWeight").html(window.localStorage.getItem("weight"));
+            $("#currentDate").html(window.localStorage.getItem("date"));
             $("#submitButton").click(function(){
-                $("#message").html("SUCCESSFUL UPDATE: \nNEW DATE:"+$("#datePicker").val()+"\nWEIGHT CLASS: "+$('input:radio[name=optionsRadios]:checked').val());
+                window.localStorage.setItem("date",$("#datePicker").val());
+                window.localStorage.setItem("weight",$('input:radio[name=optionsRadios]:checked').val());
+                $("#message").html("SUCCESSFUL UPDATE"+window.localStorage.getItem("date")+"/"+window.localStorage.getItem("weight"));
             });
         </script>
     </body> 
