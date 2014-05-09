@@ -18,54 +18,107 @@
     under the License.
 -->
 <html>
-    <head>
-        <title>Stony Brook Children's Hospital Colonoscopy Prep App</title>
-        <meta charset="utf-8" />
-        <meta name="format-detection" content="telephone=no" />
-        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
-        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
-        <!-- CDN FILES -->
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <script src="js/jquery-2.1.1.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-        <!-- LOCAL FILES -->
-        <link rel="stylesheet" type="text/css" href="css/index.css" />
-        <script type="text/javascript" src="cordova.js"></script>
-        <script type="text/javascript" src="js/index.js"></script>
-        <script type="text/javascript">
-            app.initialize();
-        </script>
-    </head>
-    <body>
-        <nav class="navbar navbar-default" role="navigation">
-  <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#">Stony Brook Children's Hospital</a>
+<head>
+    <title>Stony Brook Children's Hospital Colonoscopy Prep App</title>
+    <meta charset="utf-8"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+    <meta name="viewport"
+          content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi"/>
+    <!-- CDN FILES -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/jquery-2.1.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- LOCAL FILES -->
+    <link rel="stylesheet" type="text/css" href="css/index.css"/>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script src="js/responsiveslides.min.js"></script>
+    <script type="text/javascript">
+        app.initialize();
+    </script>
+</head>
+<body>
+<nav class="navbar navbar-default" role="navigation">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Stony Brook Children's Hospital</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li><a href="index.html">HOME</a></li>
+                <li class="active"><a href="faq.html">FAQ</a></li>
+                <li><a href="written.html">WRITTEN INSTRUCTIONS</a></li>
+                <li><a href="admin.html">ADMIN</a></li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+</nav>
+
+<div class="content container-fluid">
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <h1>What is a Colonoscopy?</h1>
+
+            <div class="content">
+                <div class="img_slider">
+
+                    <ul class="rslides">
+                        <li><img src="img/colon_1.png" alt=""></li>
+                        <li><img src="img/colon_2.png" alt=""></li>
+                        <li><img src="img/colon_3.jpg" alt=""></li>
+                        <li><img src="img/colon_4.png" alt=""></li>
+                    </ul>
+
+                </div>
+
+
+                <p> a colonoscopy is an examination in which a small
+                    ************************************************
+                    ************************************************ *************************** *********************
+                </p>
+
+            </div>
+        </div>
     </div>
 
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
-        <li><a href="index.html">HOME</a></li>
-        <li class="active"><a href="faq.html">FAQ</a></li>
-        <li><a href="written.html">WRITTEN INSTRUCTIONS</a></li>
-        <li><a href="admin.html">ADMIN</a></li>
-      </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
+</div>
+
+
+<nav class="navbar navbar-default navbar-fixed-bottom" role="navigation">
+    <div class="container">
+        <button href="index.html" type="button" class="btn btn-primary btn-lg btn-block"><a href="index.html">HOME</a>
+        </button>
+    </div>
 </nav>
-        <h1> Colonoscopy </h1>
-        <nav class="navbar navbar-default navbar-fixed-bottom" role="navigation">
-          <div class="container">
-            <button href="index.html" type="button" class="btn btn-primary btn-lg btn-block"><a href="index.html">HOME</a></button>
-          </div>
-        </nav>
-    </body> 
+
+<script type="text/javascript" src="js/custom.js"></script>
+
+<script>
+    $(function () {
+        $(".rslides").responsiveSlides({
+            auto: true,             // Boolean: Animate automatically, true or false
+            speed: 500,            // Integer: Speed of the transition, in milliseconds
+            timeout: 4000,          // Integer: Time between slide transitions, in milliseconds
+            pager: true,           // Boolean: Show pager, true or false
+            maxwidth: 600,
+            maxHeight:400
+        });
+    })
+    ;
+</script>
+
+</body>
 </html>

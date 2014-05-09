@@ -1,5 +1,6 @@
 /home/john/Documents/Cordova/Colon2/platforms/android/ant-gen/io/cordova/hellocordova/R.java \
  : /home/john/Documents/Cordova/Colon2/platforms/android/res/values/strings.xml \
+/home/john/Documents/Cordova/Colon2/platforms/android/res/raw/prep.mp4 \
 /home/john/Documents/Cordova/Colon2/platforms/android/res/drawable/icon.png \
 /home/john/Documents/Cordova/Colon2/platforms/android/res/xml/config.xml \
 /home/john/Documents/Cordova/Colon2/platforms/android/res/drawable-hdpi/icon.png \

@@ -19,6 +19,23 @@
 -->
 <html>
     <head>
+        <script>
+            function init() {
+                enableVideoClicks();
+            }
+
+            function enableVideoClicks() {
+                var videos = document.getElementsByTagName('video') || [];
+                for (var i = 0; i < videos.length; i++) {
+                    // TODO: use attachEvent in IE
+                    videos[i].addEventListener('click', function(videoNode) {
+                        return function() {
+                            videoNode.play();
+                        };
+                    }(videos[i]));
+                }
+            }
+  </script>
         <title>Stony Brook Children's Hospital Colonoscopy Prep App</title>
         <meta charset="utf-8" />
         <meta name="format-detection" content="telephone=no" />
@@ -36,7 +53,7 @@
             app.initialize();
         </script>
     </head>
-    <body>
+    <body onload="init()">
         <nav class="navbar navbar-default" role="navigation">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
@@ -62,10 +79,8 @@
   </div><!-- /.container-fluid -->
 </nav>
        <h1> Video </h1>
-       <video webkit-playsinline width="320" height="240" controls>
-            <source src="cdvfile://android_asset/www/video/mp4/prep.mp4" type="video/mp4">
-            <source src="cdvfile://android_asset/www/video/ogg/prep.ogg" type="video/ogg">
-            There was a problem playing the video
+       <video id="prep" autobuffer width="360" height="240">
+            <source src="video/BigBuck.m4v">
         </video>
         <nav class="navbar navbar-default navbar-fixed-bottom" role="navigation">
           <div class="container">

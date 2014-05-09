@@ -1,5 +1,6 @@
 /home/john/Documents/Cordova/Colon2/platforms/android/ant-build/HelloCordova.ap_ \
  : /home/john/Documents/Cordova/Colon2/platforms/android/res/values/strings.xml \
+/home/john/Documents/Cordova/Colon2/platforms/android/res/raw/prep.mp4 \
 /home/john/Documents/Cordova/Colon2/platforms/android/res/drawable/icon.png \
 /home/john/Documents/Cordova/Colon2/platforms/android/res/xml/config.xml \
 /home/john/Documents/Cordova/Colon2/platforms/android/res/drawable-hdpi/icon.png \
@@ -33,6 +34,7 @@
 /home/john/Documents/Cordova/Colon2/platforms/android/assets/www/css/bootstrap.min.css \
 /home/john/Documents/Cordova/Colon2/platforms/android/assets/www/video/mp4 \
 /home/john/Documents/Cordova/Colon2/platforms/android/assets/www/video/ogg \
+/home/john/Documents/Cordova/Colon2/platforms/android/assets/www/video/BigBuck.m4v \
 /home/john/Documents/Cordova/Colon2/platforms/android/assets/www/video/mp4/prep.mp4 \
 /home/john/Documents/Cordova/Colon2/platforms/android/assets/www/video/mp4/intro.mp4 \
 /home/john/Documents/Cordova/Colon2/platforms/android/assets/www/video/ogg/intro.ogg \
@@ -44,7 +46,16 @@
 /home/john/Documents/Cordova/Colon2/platforms/android/assets/www/js/jquery-2.1.1.min.js \
 /home/john/Documents/Cordova/Colon2/platforms/android/assets/www/js/bootstrap.min.js \
 /home/john/Documents/Cordova/Colon2/platforms/android/assets/www/js/index.js \
+/home/john/Documents/Cordova/Colon2/platforms/android/assets/www/js/custom.js \
+/home/john/Documents/Cordova/Colon2/platforms/android/assets/www/js/responsiveslides.min.js \
 /home/john/Documents/Cordova/Colon2/platforms/android/assets/www/img/stony-brook.jpg \
+/home/john/Documents/Cordova/Colon2/platforms/android/assets/www/img/colon_3.jpg \
+/home/john/Documents/Cordova/Colon2/platforms/android/assets/www/img/colon_1.png \
+/home/john/Documents/Cordova/Colon2/platforms/android/assets/www/img/app2.png \
 /home/john/Documents/Cordova/Colon2/platforms/android/assets/www/img/logo.png \
+/home/john/Documents/Cordova/Colon2/platforms/android/assets/www/img/colon_2.png \
+/home/john/Documents/Cordova/Colon2/platforms/android/assets/www/img/children_logo.png \
+/home/john/Documents/Cordova/Colon2/platforms/android/assets/www/img/colon_4.png \
+/home/john/Documents/Cordova/Colon2/platforms/android/assets/www/img/app1.jpg \
 /home/john/Documents/Cordova/Colon2/platforms/android/assets/www/img/childrens.png \
 /home/john/Documents/Cordova/Colon2/platforms/android/ant-build/AndroidManifest.xml \
