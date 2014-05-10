@@ -21,7 +21,10 @@
     <head>
         <script>
             function init() {
-                enableVideoClicks();
+                var video = document.getElementById('prep');
+                video.addEventListener('click',function(){
+                    cordova.plugins.videoPlayer.play("file:///android_asset/www/video/BigBuck.m4v"); 
+                },false);
             }
 
             function enableVideoClicks() {

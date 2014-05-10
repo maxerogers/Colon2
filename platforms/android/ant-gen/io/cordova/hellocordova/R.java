@@ -14,7 +14,7 @@ public final class R {
         public static final int icon=0x7f020000;
     }
     public static final class raw {
-        public static final int prep=0x7f040000;
+        public static final int big_buck=0x7f040000;
     }
     public static final class string {
         public static final int app_name=0x7f050000;

@@ -1,6 +1,6 @@
 /home/john/Documents/Cordova/Colon2/platforms/android/ant-build/HelloCordova.ap_ \
  : /home/john/Documents/Cordova/Colon2/platforms/android/res/values/strings.xml \
-/home/john/Documents/Cordova/Colon2/platforms/android/res/raw/prep.mp4 \
+/home/john/Documents/Cordova/Colon2/platforms/android/res/raw/big_buck.m4v \
 /home/john/Documents/Cordova/Colon2/platforms/android/res/drawable/icon.png \
 /home/john/Documents/Cordova/Colon2/platforms/android/res/xml/config.xml \
 /home/john/Documents/Cordova/Colon2/platforms/android/res/drawable-hdpi/icon.png \
@@ -19,6 +19,7 @@
 /home/john/Documents/Cordova/Colon2/platforms/android/assets/www/prep.html \
 /home/john/Documents/Cordova/Colon2/platforms/android/assets/www/video \
 /home/john/Documents/Cordova/Colon2/platforms/android/assets/www/admin.html \
+/home/john/Documents/Cordova/Colon2/platforms/android/assets/www/plugins \
 /home/john/Documents/Cordova/Colon2/platforms/android/assets/www/index.html \
 /home/john/Documents/Cordova/Colon2/platforms/android/assets/www/fonts \
 /home/john/Documents/Cordova/Colon2/platforms/android/assets/www/faq.html \
@@ -39,6 +40,9 @@
 /home/john/Documents/Cordova/Colon2/platforms/android/assets/www/video/mp4/intro.mp4 \
 /home/john/Documents/Cordova/Colon2/platforms/android/assets/www/video/ogg/intro.ogg \
 /home/john/Documents/Cordova/Colon2/platforms/android/assets/www/video/ogg/prep.ogg \
+/home/john/Documents/Cordova/Colon2/platforms/android/assets/www/plugins/com.phonegap.plugins.videoplayer \
+/home/john/Documents/Cordova/Colon2/platforms/android/assets/www/plugins/com.phonegap.plugins.videoplayer/www \
+/home/john/Documents/Cordova/Colon2/platforms/android/assets/www/plugins/com.phonegap.plugins.videoplayer/www/videoplayer.js \
 /home/john/Documents/Cordova/Colon2/platforms/android/assets/www/fonts/glyphicons-halflings-regular.ttf \
 /home/john/Documents/Cordova/Colon2/platforms/android/assets/www/fonts/glyphicons-halflings-regular.woff \
 /home/john/Documents/Cordova/Colon2/platforms/android/assets/www/fonts/glyphicons-halflings-regular.svg \

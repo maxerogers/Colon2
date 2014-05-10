@@ -1,4 +1,5 @@
 /home/john/Documents/Cordova/Colon2/platforms/android/ant-build/classes.dex : \
+/home/john/Documents/Cordova/Colon2/platforms/android/ant-build/classes/com/phonegap/plugins/videoplayer/VideoPlayer.class \
 /home/john/Documents/Cordova/Colon2/platforms/android/ant-build/classes/org/apache/cordova/device/Device.class \
 /home/john/Documents/Cordova/Colon2/platforms/android/ant-build/classes/org/apache/cordova/plugin/Html5Video$1.class \
 /home/john/Documents/Cordova/Colon2/platforms/android/ant-build/classes/org/apache/cordova/plugin/Html5Video.class \
