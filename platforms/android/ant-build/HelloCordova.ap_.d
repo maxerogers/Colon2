@@ -13,6 +13,7 @@
 /home/max/Dev/Cordova/Colon2/platforms/android/ant-build/res/drawable-mdpi/icon.png \
 /home/max/Dev/Cordova/Colon2/platforms/android/assets/www \
 /home/max/Dev/Cordova/Colon2/platforms/android/assets/_where-is-www.txt \
+/home/max/Dev/Cordova/Colon2/platforms/android/assets/www/prep02.html \
 /home/max/Dev/Cordova/Colon2/platforms/android/assets/www/video \
 /home/max/Dev/Cordova/Colon2/platforms/android/assets/www/video.html \
 /home/max/Dev/Cordova/Colon2/platforms/android/assets/www/prep.html \
@@ -24,12 +25,17 @@
 /home/max/Dev/Cordova/Colon2/platforms/android/assets/www/cordova.js \
 /home/max/Dev/Cordova/Colon2/platforms/android/assets/www/plugins \
 /home/max/Dev/Cordova/Colon2/platforms/android/assets/www/admin.html \
+/home/max/Dev/Cordova/Colon2/platforms/android/assets/www/written00.html \
 /home/max/Dev/Cordova/Colon2/platforms/android/assets/www/css \
 /home/max/Dev/Cordova/Colon2/platforms/android/assets/www/fonts \
+/home/max/Dev/Cordova/Colon2/platforms/android/assets/www/written02.html \
+/home/max/Dev/Cordova/Colon2/platforms/android/assets/www/written03.html \
+/home/max/Dev/Cordova/Colon2/platforms/android/assets/www/prep01.html \
 /home/max/Dev/Cordova/Colon2/platforms/android/assets/www/colon.html \
 /home/max/Dev/Cordova/Colon2/platforms/android/assets/www/written.html \
 /home/max/Dev/Cordova/Colon2/platforms/android/assets/www/faq.html \
 /home/max/Dev/Cordova/Colon2/platforms/android/assets/www/js \
+/home/max/Dev/Cordova/Colon2/platforms/android/assets/www/written01.html \
 /home/max/Dev/Cordova/Colon2/platforms/android/assets/www/video/ogg \
 /home/max/Dev/Cordova/Colon2/platforms/android/assets/www/video/mp4 \
 /home/max/Dev/Cordova/Colon2/platforms/android/assets/www/video/BigBuck.m4v \
