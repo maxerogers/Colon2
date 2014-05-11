@@ -21,10 +21,16 @@
     <head>
         <script>
             function init() {
-                var video = document.getElementById('prep');
-                video.addEventListener('click',function(){
-                    cordova.plugins.videoPlayer.play("file:///android_asset/www/video/BigBuck.m4v"); 
-                },false);
+                var deviceType = (navigator.userAgent.match(/iPad/i))  == "iPad" ? "iPad" : (navigator.userAgent.match(/iPhone/i))  == "iPhone" ? "iPhone" : (navigator.userAgent.match(/Android/i)) == "Android" ? "Android" : (navigator.userAgent.match(/BlackBerry/i)) == "BlackBerry" ? "BlackBerry" : "null";
+
+                if (deviceType === "Android"){
+                    var video = document.getElementById('prep');
+                    video.addEventListener('click',function(){
+                        cordova.plugins.videoPlayer.play("file:///android_asset/www/video/BigBuck.m4v"); 
+                    },false);
+                } else {
+                    enableVideoClicks();
+                }
             }
 
             function enableVideoClicks() {
@@ -93,7 +99,7 @@
         <script type="text/javascript">
         $(function(){
             window.localStorage.setItem("sawVideo","true");
-            alert(window.localStorage.getItem("sawVideo"));
+            //alert(window.localStorage.getItem("sawVideo"));
         });
         </script>
     </body> 
