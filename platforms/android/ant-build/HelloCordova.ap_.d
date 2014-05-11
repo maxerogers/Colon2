@@ -50,9 +50,12 @@
 /home/john/Documents/Cordova/Colon2/platforms/android/assets/www/gitbait.txt \
 /home/john/Documents/Cordova/Colon2/platforms/android/assets/www/css/index.css \
 /home/john/Documents/Cordova/Colon2/platforms/android/assets/www/css/bootstrap.min.css \
+/home/john/Documents/Cordova/Colon2/platforms/android/assets/www/video/m4v \
 /home/john/Documents/Cordova/Colon2/platforms/android/assets/www/video/mp4 \
 /home/john/Documents/Cordova/Colon2/platforms/android/assets/www/video/ogg \
 /home/john/Documents/Cordova/Colon2/platforms/android/assets/www/video/BigBuck.m4v \
+/home/john/Documents/Cordova/Colon2/platforms/android/assets/www/video/m4v/intro.m4v \
+/home/john/Documents/Cordova/Colon2/platforms/android/assets/www/video/m4v/prep.m4v \
 /home/john/Documents/Cordova/Colon2/platforms/android/assets/www/video/mp4/prep.mp4 \
 /home/john/Documents/Cordova/Colon2/platforms/android/assets/www/video/mp4/intro.mp4 \
 /home/john/Documents/Cordova/Colon2/platforms/android/assets/www/video/ogg/intro.ogg \
