@@ -50,8 +50,9 @@
         <div class="meat"> 
     <h3> PREP:Step 2</h3>
         <p> Now you will wait 4 hours to allow your child's system to digest the laxative</p>
+        <p><strong> NOTE: For the demo it will only run for 5 seconds </strong></p>
         <p id="time_left_line"> You have <span id="countDown">X</span> time left</p>
-        <a role="button" id="nextBtn" class="btn btn-success btn-lg btn-block" href="prep03.html">NEXT</a>
+        <a role="button" id="nextBtn" class="btn btn-success btn-lg btn-block" href="#">NEXT</a>
         </div>
         <script>
             var time_left = 6*1000;
@@ -77,17 +78,26 @@
                 $("#nextBtn").show();
                 clearInterval(countDownTimeInteveral);
                 $("#time_left_line").html("");
-                navigator.notification.beep(3);
-                navigator.notification.vibrate(2000);
-                alert("RWAR!!!");
+                showAlert();
             },time_left);
 
-            // Android / BlackBerry WebWorks (OS 5.0 and higher) / iPhone / Tizen
-            //
-            function alertDismissed() {
-                // do something
+            function alertDismissed(){
+                //send to prep03.html
+                window.location.href = "prep03.html";
             }
 
-        </script
+            // Show a custom alertDismissed
+            //
+            function showAlert() {
+                navigator.notification.alert(
+                    'You have finished the first half of the Colonoscopy Prep. Congrats :D',  // message
+                    alertDismissed,         // callback
+                    'Times Up',            // title
+                    'Next'                  // buttonName
+                );
+                navigator.notification.beep(5);
+            }
+
+        </script>
     </body> 
 </html>
