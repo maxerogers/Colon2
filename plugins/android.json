@@ -17,11 +17,11 @@
                             "count": 1
                         },
                         {
-                            "xml": "<feature name=\"Vibration\"><param name=\"android-package\" value=\"org.apache.cordova.vibration.Vibration\" /></feature>",
+                            "xml": "<feature name=\"Notification\"><param name=\"android-package\" value=\"org.apache.cordova.dialogs.Notification\" /></feature>",
                             "count": 1
                         },
                         {
-                            "xml": "<feature name=\"Notification\"><param name=\"android-package\" value=\"org.apache.cordova.dialogs.Notification\" /></feature>",
+                            "xml": "<feature name=\"Vibration\"><param name=\"android-package\" value=\"org.apache.cordova.vibration.Vibration\" /></feature>",
                             "count": 1
                         }
                     ]
@@ -46,10 +46,10 @@
         "org.apache.cordova.device": {
             "PACKAGE_NAME": "io.cordova.hellocordova"
         },
-        "org.apache.cordova.vibration": {
+        "org.apache.cordova.dialogs": {
             "PACKAGE_NAME": "io.cordova.hellocordova"
         },
-        "org.apache.cordova.dialogs": {
+        "org.apache.cordova.vibration": {
             "PACKAGE_NAME": "io.cordova.hellocordova"
         }
     },

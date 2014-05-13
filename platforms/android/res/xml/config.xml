@@ -10,13 +10,17 @@
     <feature name="Device">
         <param name="android-package" value="org.apache.cordova.device.Device" />
     </feature>
-    <feature name="Vibration">
-        <param name="android-package" value="org.apache.cordova.vibration.Vibration" />
-    </feature>
     <feature name="Notification">
         <param name="android-package" value="org.apache.cordova.dialogs.Notification" />
     </feature>
+<<<<<<< HEAD
     <name>Colonoscopy Prep</name>
+=======
+    <feature name="Vibration">
+        <param name="android-package" value="org.apache.cordova.vibration.Vibration" />
+    </feature>
+    <name>HelloCordova</name>
+>>>>>>> 656a07c1c67f5f5e8f6b147c1f7ed685f29e33b8
     <description>
         This application is the demo for Stony Brook Children's Hospital Colonoscopy Prep App
     </description>
