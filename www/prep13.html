@@ -63,8 +63,7 @@
 </nav>
     <h3> Congratualations: </h3>
     <p> Your child’s colonoscopy will 
-        take place at <strong>9am on May 23,
-        2014 on the 14th floor of the 
+        take place at <strong><span id="currentTime"></span> on <span id="currentDate"></span> on the 14th floor of the 
         main hospital</strong>. Please arrive 1 
         hour before your scheduled procedure.
 
@@ -72,5 +71,21 @@
 
         Proceed left to the North Tower to Endoscopy Reception (14N 01).  The actual procedure takes approximately 1 hour, but expect to be at the hospital for about 3-5 hours. 
     </p>
+    <nav class="navbar navbar-default navbar-fixed-bottom" role="navigation">
+      <div class="container">
+        
+        <a role="button" class="btn btn-primary btn-lg btn-block" href="index.html">HOME</a>
+      </div>
+    </nav>
+    <script type="text/javascript">
+    $(function(){
+        if (window.localStorage.getItem("date") !== null) {
+            $("#currentDate").html(window.localStorage.getItem("date").toDateString());
+        }
+        if (window.localStorage.getItem("time") !== null) {
+            $("#currentTime").html(window.localStorage.getItem("time"));
+        }
+    });
+    </script
     </body> 
 </html>

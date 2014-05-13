@@ -74,41 +74,36 @@
     <div class="row">
         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
             <h1>Admin</h1>
-
             <div class="content-left">
                 Current Weight: <span id="currentWeight"></span>
                 <br> Current Appointment Date: <span id="currentDate"></span>
+                <br> Current Appointment Time: <span id="currentTime"></span>
+                <br> Results01 - Stool Type: <span id="stoolType1">They haven't finished the Interactive Prep</span>
+                <br> Results01 - Stool Color: <span id="stoolColor1">....</span>
+                <br> Results02 - Stool Type: <span id="stoolType2">....</span>
+                <br> Results02 - Stool Color: <span id="stoolColor2">....</span>
                 <br>
                 <br>
                 CHANGE
                 <br>
-                Weight:
-                <div class="radio">
-                    <label>
-                        <input type="radio" name="optionsRadios" id="optionsRadios1" value="Less than 15kg" checked>
-                        Less than 15kg
-                    </label>
-                </div>
-                <div class="radio">
-                    <label>
-                        <input type="radio" name="optionsRadios" id="optionsRadios2" value="15-30kg">
-                        15-30kg
-                    </label>
-                </div>
-                <div class="radio">
-                    <label>
-                        <input type="radio" name="optionsRadios" id="optionsRadios3" value="Greater than 30kg">
-                        Greater than 30kg
-                    </label>
-                </div>
+                Weight:<br>
+                <form id="myForm">
+                <input type="radio" name="radioName" value="<15kg" checked /> <15kg <br />
+                <input type="radio" name="radioName" value="15-30kg" /> 15-30kg <br />
+                <input type="radio" name="radioName" value=">30kg" /> >30kg <br />
+                </form>
+                <br>
                 Appointment: <input id="datePicker" type="date" name="bday">
+                Appointment Time: <input id="timePicker" type="time" name="time">
                 <button id="submitButton">Update</button>
                 <p id="message"></p>
             </div>
         </div>
     </div>
-
 </div>
+<br>
+<br>
+<br>
 <!-- FOOTER -->
 <nav class="navbar navbar-default navbar-fixed-bottom" role="navigation">
     <div class="container">
@@ -116,19 +111,27 @@
     </div>
 </nav>
 <script>
-    if (window.localStorage.getItem("weight") !== null) {
-        $("#currentWeight").html(window.localStorage.getItem("weight"));
-    }
-    if (window.localStorage.getItem("date") !== null) {
-        $("#currentDate").html(window.localStorage.getItem("date"));
-    }
-    $("#submitButton").click(function () {
-        window.localStorage.setItem("date", $("#datePicker").val());
-        window.localStorage.setItem("weight", $('input:radio[name=optionsRadios]:checked').val());
-        $("#message").html("SUCCESSFUL UPDATE");
-        $("#currentWeight").html(window.localStorage.getItem("weight"));
-        $("#currentDate").html(window.localStorage.getItem("date"));
+    $(function(){
+        $("#submitButton").click(function(){
+            window.localStorage.setItem("weight",$('input[name=radioName]:checked', '#myForm').val());
+            window.localStorage.setItem("time",$('#timePicker').val());
+            window.localStorage.setItem("date",$('#datePicker').val());
+            $("#message").html("UPDATE SUCCESSFUL");
+            updateFields();
+        });
     });
+    function updateFields(){
+        $("#currentWeight").html(window.localStorage.getItem("weight"));
+        $("#currentTime").html(window.localStorage.getItem("time"));
+        $("#currentDate").html(window.localStorage.getItem("date"));
+        $("#timePicker").val(window.localStorage.getItem("time"));
+        $("#datePicker").val(window.localStorage.getItem("date"));
+        $("#stoolType1").html(window.localStorage.getItem("stoolType1"));
+        $("#stoolType2").html(window.localStorage.getItem("stoolType2"));
+        $("#stoolColor1").html(window.localStorage.getItem("stoolColor1"));
+        $("#stoolColor2").html(window.localStorage.getItem("stoolColor2"));
+    }
+    updateFields();
 </script>
 </body>
 </html>

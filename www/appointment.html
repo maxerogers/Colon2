@@ -63,14 +63,19 @@
   </div><!-- /.container-fluid -->
 </nav>
     <h3> Appointment </h3>
-    <p> Day: <span id='date'> You don't appear to have an appointment. Please contact your doctor </span></p>
-    <p> Time: <span id="time"> You don't appear to have an appointment. Please contact your doctor </span></p>
+    <p> Day: <span id='currentDate'> You don't appear to have an appointment. Please contact your doctor </span></p>
+    <p> Time: <span id="currentTime"> You don't appear to have an appointment. Please contact your doctor </span></p>
     <p> Location: 14th floor of the 
         main hospital<br>101 Nicolls Rd<br>Stony Brook, NY 11794 </p>
     <p> Link: <a href="https://www.google.com/maps?saddr=My+Location&daddr=Stony+Brook+University+Hospital+Nicolls+Road+Stony+Brook+NY+11794">GoogleMaps</a></p>
     <script type="text/javascript">
     $(function(){
-        
+        if (window.localStorage.getItem("date") !== null) {
+            $("#currentDate").html(window.localStorage.getItem("date").toDateString());
+        }
+        if (window.localStorage.getItem("time") !== null) {
+            $("#currentTime").html(window.localStorage.getItem("time"));
+        }
     });
     </script>
     </body> 

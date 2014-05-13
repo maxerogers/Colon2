@@ -16,12 +16,12 @@
     <feature name="Notification">
         <param name="android-package" value="org.apache.cordova.dialogs.Notification" />
     </feature>
-    <name>HelloCordova</name>
+    <name>Colonoscopy Prep</name>
     <description>
-        A sample Apache Cordova application that responds to the deviceready event.
+        This application is the demo for Stony Brook Children's Hospital Colonoscopy Prep App
     </description>
-    <author email="dev@cordova.apache.org" href="http://cordova.io">
-        Apache Cordova Team
+    <author email="maxrogers90@gmail.com" href="SBUMAD.github.io">
+        Max Rogers
     </author>
     <content src="index.html" />
     <access origin="*" />
